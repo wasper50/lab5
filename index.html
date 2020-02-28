@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Artist Directory
+    </title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+    <div id="directoryTitle">
+        <h1>Artist Directory</h1>
+        <input type="text" id="search">
+        <button onclick="toggleForm()" type="button">Add</button>
+        <button onclick="searchArtist()" type="button">Search</button>
+    </div>
+    
+
+
+    <div id="form">
+
+        <div class="artistDetails">
+            <input id="name" placeholder="Artist Name" maxlength="40"/>
+        </div>
+
+        <div class="artistDetails">
+            <input id="about" placeholder="About artist" maxlength="40"/>
+        </div>
+
+        <div class="artistDetails">
+            <input id="url" placeholder="Image url" />
+        </div>
+        
+        <div class="artistDetails">
+            <button id="addArtist" onclick="add()">Add</button>
+        </div>
+
+    </div>
+
+    <div id="artists"></div>
+
+    <script type="text/javascript" src="directory.js"></script>
+    
+</body>
+</html>
